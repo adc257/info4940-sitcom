@@ -72,6 +72,7 @@ def reorganize_data(file):
                 continue
             else:
                 lines_dict[start_time] = {
+                    "EpisodeID": info['AV_ID'],
                     "Scene": info["Scene"],
                     "Recipients": info[turn]["Recipients"],
                     "Speaker": info[turn]["Speaker"],
